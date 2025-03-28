@@ -10,3 +10,7 @@ export const logout = () => {
   localStorage.removeItem("token");
   window.location.href = "/login";
 };
+//here
+export const removeToken = () => {
+  localStorage.removeItem("token");
+};
