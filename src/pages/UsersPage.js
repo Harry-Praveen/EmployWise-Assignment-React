@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { getUsers, deleteUser } from "../services/api";
-import { logout } from "../utils/auth";
+// import { logout } from "../utils/auth";
+import { removeToken } from "../utils/auth";
 
 const UsersPage = () => {
   const [users, setUsers] = useState([]);
