@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# EmployWise Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that integrates with the Reqres API to perform user management.
 
-## Available Scripts
+## Features
+- User authentication (Login)
+- User listing with pagination
+- Edit and delete users
+- Search and filter users 
+- Responsive design using Bootstrap
 
-In the project directory, you can run:
+## 🛠️ Installation & Setup
 
-### `npm start`
+(1)Clone the repository:
+    git clone https://github.com/Harry-Praveen/EmployWise-Assignment-React.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+(2)Navigate to the project directory:
+    cd EmployWise-Assignment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+(3) Install Dependencies:
+    npm install
 
-### `npm test`
+(4)Start the development server:
+    npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+(5)The application will run at http://localhost:3000/login
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Login Page: Enter the provided credentials and click "Login".
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+User List: Upon login, users are displayed with pagination.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Edit User: Click "Edit" on a user to modify details.
 
-### `npm run eject`
+Delete User: Click "Delete" to remove a user.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## API Endpoints Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Login: POST /api/login
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Get Users: GET /api/users?page=1
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Update User: PUT /api/users/{id}
 
-## Learn More
+Delete User: DELETE /api/users/{id}
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Assumptions & Considerations
 
-### Code Splitting
+The app does not store user passwords for security.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Token is stored in local storage for session management.
 
-### Analyzing the Bundle Size
+The Reqres API is a mock API, so updates and deletions are not permanent.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The application is deployed at: [Your Deployment URL]
 
-### Advanced Configuration
+## Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Praveen Kumar
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub: https://github.com/Harry-Praveen
