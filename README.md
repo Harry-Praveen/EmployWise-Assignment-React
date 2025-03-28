@@ -57,7 +57,7 @@ The Reqres API is a mock API, so updates and deletions are not permanent.
 
 ## Deployment
 
-The application is deployed at: [Your Deployment URL]
+The application is deployed at: https://emplyze.onrender.com/
 
 ## Developer
 
