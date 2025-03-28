@@ -53,11 +53,15 @@ const UsersPage = () => {
       alert("Failed to delete user.");
     }
   };
+  const handleLogout = () => {
+    removeToken();
+    navigate("/"); // Redirect to login page after logout
+  };
 
   return (
     <div className="container mt-4">
       <h2>User List</h2>
-      <button className="btn btn-danger mb-3" onClick={logout}>
+      <button className="btn btn-danger mb-3" onClick={handleLogout}>
         Logout
       </button>
 
